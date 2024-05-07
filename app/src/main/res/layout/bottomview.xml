@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bottomview"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="75dp">
+
+    <Button
+        android:id="@+id/requestPick"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/redstraightbutton"
+        android:text="Finding shippers..."
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/shipperInfo"
+        android:layout_below="@+id/requestPick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/nameRel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipper Name"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/darkGrey"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/ShipperName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:layout_below="@+id/text1"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/userimg"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/phoneRel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameRel"
+            android:layout_marginTop="3dp">
+
+            <ImageView
+                android:id="@+id/imagePhone"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/phone"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipper Number"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/darkGrey"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/ShipperPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="--"
+                android:layout_below="@+id/text2"
+                android:textSize="22sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:id="@+id/desRel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneRel"
+        android:layout_marginTop="3dp">
+
+        <ImageView
+            android:id="@+id/imageDes"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_location_on_black_24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destination"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/darkGrey"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/ShipperDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="--"
+            android:layout_below="@+id/text3"
+            android:textSize="22sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/recRel"
+                android:layout_below="@+id/desRel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recipient Number"
+                    android:layout_marginTop="3dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/darkGrey"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/RecipientNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:layout_below="@+id/text4"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/userimg"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"/>
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/adRel"
+            android:layout_below="@+id/recRel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recipient Address"
+                android:layout_marginTop="3dp"
+                android:textSize="18sp"
+                android:textColor="@color/darkGrey"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:layout_below="@+id/text5"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/ic_add_location"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/costRel"
+            android:layout_below="@+id/adRel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cost"
+                android:layout_marginTop="3dp"
+                android:textSize="18sp"
+                android:textColor="@color/darkGrey"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/Cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:layout_below="@+id/text6"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/ic_monetization_on_black_24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Cost"
+                android:text="Cancel delivery"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorRed"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:layout_marginTop="20dp"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

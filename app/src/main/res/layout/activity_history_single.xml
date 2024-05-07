@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistorySingleActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <RelativeLayout
+        android:id="@+id/relTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/map">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Details"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/tripLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="From - To :"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tripDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Distance :"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/tripLocation"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/tripDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date :"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/tripDistance"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/tripCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost :"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@+id/tripDate"
+            android:layout_marginTop="15dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relTop"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:tint="@color/colorBlack"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/userimg"/>
+
+        <TextView
+            android:id="@+id/tripName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shipper :"
+            android:textColor="#000000"
+            android:layout_marginLeft="25dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/image"/>
+
+        <TextView
+            android:id="@+id/tripPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone :"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/image"
+            android:layout_below="@+id/tripName"/>
+
+        <Spinner
+            android:id="@+id/paySpinner"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tripPhone"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:entries="@array/PaymentStatus"/>
+
+        <EditText
+            android:id="@+id/feedback"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/paySpinner"
+            android:backgroundTint="@color/colorRed"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:hint="Feedback"
+            android:textColor="@color/colorBlack"/>
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_send"
+            android:layout_alignBottom="@+id/feedback"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/feedback"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/redsolidbutton"
+            android:text="Save"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+</RelativeLayout>

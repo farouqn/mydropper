@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navHistory"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="History" />
+
+        <item android:id="@+id/navPayment"
+            android:icon="@drawable/ic_payment"
+            android:title="Payment"/>
+
+
+        <item android:id="@+id/navHelp"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="Help"/>
+
+
+        <item android:id="@+id/navSettings"
+            android:title="Settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            />
+
+        <item android:id="@+id/navLog"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Logout"
+            />
+    </group>
+</menu>

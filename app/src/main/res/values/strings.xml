@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Dropper</string>
+
+    <array name="States">
+        <item>Abia</item>
+        <item>Adamawa</item>
+        <item>Anambra</item>
+        <item>Akwa Ibom</item>
+        <item>Bauchi</item>
+        <item>Bayelsa</item>
+        <item>Benue</item>
+        <item>Borno</item>
+        <item>Cross River</item>
+        <item>Delta</item>
+        <item>Ebonyi</item>
+        <item>Enugu</item>
+        <item>Edo</item>
+        <item>Ekiti</item>
+        <item>FCT - Abuja</item>
+        <item>Gombe</item>
+        <item>Imo</item>
+        <item>Jigawa</item>
+        <item>Kaduna</item>
+        <item>Kano</item>
+        <item>Katsina</item>
+        <item>Kebbi</item>
+        <item>Kogi</item>
+        <item>Kwara</item>
+        <item>Lagos</item>
+        <item>Nasarawa</item>
+        <item>Niger</item>
+        <item>Ogun</item>
+        <item>Ondo</item>
+        <item>Osun</item>
+        <item>Oyo</item>
+        <item>Plateau</item>
+        <item>Rivers</item>
+        <item>Sokoto</item>
+        <item>Taraba</item>
+        <item>Yobe</item>
+        <item>Zamfara</item>
+    </array>
+
+    <array name="Vehicle">
+        <item>Bike</item>
+        <item>Car</item>
+        <item>Van</item>
+    </array>
+
+    <array name="Banks">
+
+        <item>Access Bank Plc</item>
+        <item>Citibank Nigeria Limited</item>
+        <item>Ecobank Nigeria Plc</item>
+        <item>Fidelity Bank Plc</item>
+        <item>FIRST BANK NIGERIA LIMITED</item>
+        <item>First City Monument Bank Plc</item>
+        <item>Globus Bank Limited</item>
+        <item>Guaranty Trust Bank Plc</item>
+        <item>Heritage Banking Company Ltd.</item>
+        <item>Key Stone Bank</item>
+        <item>Polaris Bank</item>
+        <item>Providus Bank</item>
+        <item>Stanbic IBTC Bank Ltd.</item>
+        <item>Standard Chartered Bank Nigeria Ltd.</item>
+        <item>Sterling Bank Plc</item>
+        <item>SunTrust Bank Nigeria Limited</item>
+        <item>Titan Trust Bank Ltd</item>
+        <item>Union Bank of Nigeria Plc</item>
+        <item>United Bank For Africa Plc</item>
+        <item>Unity Bank Plc</item>
+        <item>Wema Bank Plc</item>
+        <item>Zenith Bank Plc</item>
+
+    </array>
+
+    <array name="PaymentMethod">
+    <item>I received cash</item>
+    <item>Debit/Credit card</item>
+
+    </array>
+
+    <array name="PaymentStatus">
+        <item>Paid</item>
+        <item>Not Paid</item>
+    </array>
+</resources>

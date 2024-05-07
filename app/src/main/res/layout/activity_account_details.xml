@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".AccountDetailsActivity">
+
+    <TextView
+        android:id="@+id/ai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Information"
+        android:textColor="@color/colorRed"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add your account details to receive payments"
+        android:layout_below="@+id/ai"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/darkGrey"/>
+
+    <EditText
+        android:id="@+id/accountName"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext"
+        android:layout_below="@+id/ai"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Account Name"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/darkGrey"/>
+
+    <EditText
+        android:id="@+id/accountNumber"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext"
+        android:layout_below="@+id/accountName"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Account Number"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:inputType="number"
+        android:textColorHint="@color/darkGrey"/>
+
+    <Spinner
+        android:id="@+id/accountBank"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext"
+        android:layout_below="@+id/accountNumber"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:entries="@array/Banks"
+        android:textColor="@color/colorBlack"
+        android:inputType="text"
+        android:textColorHint="@color/darkGrey">
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/accountSave"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/accountBank"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/redsolidbutton"
+        android:text="Save"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textStyle="bold"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*We take 20% commission on all deliveries"
+        android:layout_below="@+id/accountSave"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/darkGrey"/>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/bottomcomplete"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:behavior_peekHeight="100dp"
+    android:visibility="gone">
+
+    <Button
+        android:id="@+id/deliveryComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/redstraightbutton"
+        android:text="Delivery Completed"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/pm"
+        android:layout_below="@+id/deliveryComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment method: "
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/payM"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pm"
+        android:layout_marginTop="20dp"
+        android:entries="@array/PaymentMethod">
+
+    </Spinner>
+</RelativeLayout>
